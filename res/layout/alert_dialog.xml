@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20sp"
+    android:background="#669900"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertBox_1"
+        android:textSize="25sp"
+        android:text="Steps to avail your subscription"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Click on any ads below"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20sp"
+        android:gravity="left"
+        android:id="@+id/alertBox_2"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2) It will take you to a new page"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/alertBox_3"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3) Wait for the ads to load"
+        android:layout_marginTop="10sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/alertBox_4"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4) Click back button [device button] - it will take you back to the app"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/alertBox_5"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5) repeat the click, it will automatically add a day subscription"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/alertBox_6"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please note: Press anywhere outside this alert box to exit this window."
+        android:textColor="#ffffff"
+        android:layout_marginTop="20sp"
+        android:id="@+id/alertBox_7"
+        android:gravity="left" />
+</LinearLayout>

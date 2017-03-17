@@ -1,0 +1,390 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/mainActivityLayout"
+    android:layout_height="match_parent">
+
+
+    <!--Suscription-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription"
+        android:gravity="center_horizontal"
+        android:padding="15sp"
+        android:textColor="#ffffffff"
+        android:background="#669900"
+        android:id="@+id/heading1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/Tv_sub_days"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refill  "
+            android:drawableRight="@mipmap/ic_queue_play_next_black_24dp"
+            android:id="@+id/btn_refill"
+            android:layout_gravity="center_horizontal" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="It's a FREE APP"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give Permission"
+            android:id="@+id/permission"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <!--Status Check-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Status"
+        android:id="@+id/textView11"
+        android:gravity="center_horizontal"
+        android:padding="15sp"
+        android:background="#669900"
+        android:textColor="#ffffffff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Auto-Delete"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="Large Text"
+                android:id="@+id/tv_auto_delete_enabled"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center_horizontal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="App Password"
+                android:id="@+id/textView1"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="Device"
+                android:id="@+id/tv_app_password"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center_horizontal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Phone Number"
+                android:id="@+id/textView22"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="Large Text"
+                android:id="@+id/tv_auto_delete"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center_horizontal"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Hide App Enabled"
+                android:layout_weight="1"
+                android:id="@+id/textView44"
+                android:padding="10dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="Large Text"
+                android:id="@+id/hide_app_enabled"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center_horizontal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Hide Number"
+                android:id="@+id/textView5"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="Large Text"
+                android:id="@+id/hide_number_set"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center_horizontal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Product Service"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:id="@+id/textViewD"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="Large Text"
+                android:id="@+id/developer_service"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center_horizontal" />
+        </TableRow>
+    </TableLayout>
+
+    </LinearLayout>
+    <!--Subscription-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:padding="15sp"
+        android:background="#669900"
+        android:textColor="#ffffffff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Status"
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:id="@+id/textView2" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:padding="10sp"
+            android:checked="false"
+            android:text="Auto-Delete" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Your password to login"
+        android:id="@+id/textViewLogin"
+        android:padding="10sp" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:id="@+id/sharedPassHolder" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:src="@mipmap/ic_vpn_key_black_18dp"
+            android:id="@+id/sharedPassButton" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPhone"
+        android:text="Enter the phone number exactly how you receive call with country code to delete the call history automatically (eg. +91xxxxxxxxx)"
+        android:padding="10sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sharedNumberHolder"
+        android:layout_weight="1"/>
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@mipmap/ic_account_box_black_18dp"
+        android:id="@+id/chooseContact"
+        android:layout_weight="2"/>
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@mipmap/ic_send_black_18dp"
+        android:id="@+id/sharedNumberButton"
+        android:layout_weight="2"/>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:id="@+id/adViewSub3"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/subscription3">
+    </com.google.android.gms.ads.AdView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Advanced Feature"
+        android:gravity="center_horizontal"
+        android:padding="15sp"
+        android:textColor="#ffffffff"
+        android:background="#669900"
+        android:id="@+id/heading2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide App"
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:id="@+id/textViewHide" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hideSwitch"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:checked="false" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHideText"
+        android:text="Enter 4 digit number to show and hide your app by dialling *xxxx (star, number, number, number, number)"
+        android:padding="10sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hideshowNumber"
+            android:inputType="number"
+            android:hint="4 Digit"
+            android:layout_weight="1"
+            android:maxLength="4" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/ic_phonelink_lock_black_18dp"
+            android:id="@+id/hideshowButton"
+            android:layout_weight="3"/>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:id="@+id/adViewSub2"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/subscription2">
+    </com.google.android.gms.ads.AdView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:id="@+id/privacy"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+
+    </ScrollView>
