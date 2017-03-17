@@ -9,7 +9,7 @@ Android Application for:
  * Deleting your specified <b>`[contact_number]`</b> automatically after you end the call <b>`[INCOMING]`</b>&<b>`[OUTGOING]`</b> calls.
  * Adding fake call log from your phonebook or any custom number.
  * Modifying date and time of any call log.
- * Hide the app existence on your mobile by dialing custom set number `eg: <b>*1234</b>`
+ * Hide the app existence on your mobile by dialling custom set number <b>`eg:*1234`</b>
 
 
 App is published on <b>`Google Play`</b>. You can download it for free from the following link:
