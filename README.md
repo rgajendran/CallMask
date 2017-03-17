@@ -18,6 +18,7 @@ App is published on <b>`Google Play`</b>. You can download it for free from
 https://play.google.com/store/apps/details?id=com.gajendraprofile.callmask
 ```
 
+App Default Password <b>`CallMask`</b>
 
 <h1>Screenshots</h1>
 
